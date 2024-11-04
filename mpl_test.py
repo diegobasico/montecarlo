@@ -1,8 +1,8 @@
-import matplotlib.pyplot as plt
+# %%
 import numpy as np
+import matplotlib.pyplot as plt
 
-
-# Create a figure containing a single Axes.
-fig, ax = plt.subplots()
-ax.plot([1, 2, 3, 4], [1, 4, 2, 3])  # Plot some data on the Axes.
-plt.show()                           # Show the figure.
+rng = np.random.default_rng()
+h = plt.hist(rng.triangular(-3, 0, 8, 100000), bins=200,
+             density=False)
+plt.show()
