@@ -10,18 +10,20 @@ def binned_dataframe(left, mode, right, size):
     return df
 
 
-def histogram(df, step):
+def distribution_plot(df, step):
     
     chart = alt.Chart(df).transform_density(
         'values',
         as_=['values', 'density']
     ).mark_area().encode(
-    x=alt.X('values:Q', bin=alt.Bin(maxbins=step), title='Values'),
-    y=alt.Y('density:Q', title='Density')
+    # x=alt.X('values:Q', bin=alt.Bin(maxbins=step), title='Values'),
+    x=alt.X('values:Q', title='Values'),
+    y=alt.Y('density:Q', title='Density'),
+    tooltip=['values:Q', 'density:Q']
     ).properties(
         width=600,
         height=400,
-        title='Triangular Distribution Histogram'
+        title='Triangular Distribution'
     )
 
     return chart
@@ -36,7 +38,7 @@ def main():
     df = binned_dataframe(left, mode, right, size)
     print(df)
 
-    chart = histogram(df, step)
-    chart.save('example.html')
+    chart = distribution_plot(df, step)
+    chart.save('test/example.html')
 
 main()

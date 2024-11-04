@@ -1,0 +1,6 @@
+Área 1 : Tumbes, Piura, Lambayeque, La Libertad, Cajamarca, Amazonas, San Martín
+Área 2 : Ancash, Lima, Provincia Constitucional del Callao, Ica
+Área 3 : Huánuco, Pasco, Junín, Huancavelica, Ayacucho, Ucayali
+Área 4 : Arequipa, Moquegua, Tacna
+Área 5 : Loreto
+Área 6 : Cusco, Puno, Apurímac, Madre de Dios

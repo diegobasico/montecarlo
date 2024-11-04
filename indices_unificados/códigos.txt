@@ -1,0 +1,80 @@
+01,Aceite,1
+02,Acero de construcción liso,1
+03,Acero de construcción corrugado,1
+04,Agregado fino,1
+05,Agregado grueso,1
+06,Alambre y cable de cobre desnudo,1
+07,Alambre y cable Tipo TW y THW,1
+08,Alambre y cable tipo WP,1
+09,Alcantarilla metálica,1
+10,Aparato sanitario con grifería,1
+11,Artefacto de alumbrado exterior,1
+12,Artefacto de alumbrado interior,1
+13,Asfalto,1
+14,Baldosa acústica,1
+15,Baldosa asfáltica,0
+16,Baldosa vinílica,1
+17,Bloque y Ladrillo,1
+18,Cable telefónico,1
+19,Cable NYY-N2XY,1
+20,Cemento asfáltico,1
+21,Cemento Portland Tipo I,1
+22,Cemento Portland Tipo II (t),1
+23,Cemento Portland Tipo V,1
+24,Cerámica esmaltada y sin esmaltar,1
+25,Cerrajería importada (Índice 30),0
+26,Cerrajería nacional,1
+27,Detonante,1
+28,Dinamita,1
+29,Dólar,0
+30,Dólar más Inflación mercado USA,1
+31,Ducto de Concreto,1
+32,Flete Terrestre,1
+33,Flete aéreo,1
+34,Gasolina,1
+35,Gelatina,0
+36,Gelignita,0
+37,Herramienta Manual,1
+38,Hormigón,1
+39,Índice General de Precios al Consumidor,1
+40,Loseta,1
+41,Madera en tiras para piso,1
+42,Madera importada para encofrado y carpintería,1
+43,Madera nacional para encofrado y carpintería,1
+44,Madera terciada para encofrado y carpintería,1
+45,Madera terciada para encofrado,1
+46,Malla de acero,1
+47,Mano de obra (incluido leyes sociales),1
+48,Maquinaria y equipo nacional,1
+49,Maquinaria y equipo importado,1
+50,Marco y tapa de fierro fundido,1
+51,Perfil de acero liviano,1
+52,Perfil de aluminio,1
+53,Petróleo diesel,1
+54,Pintura látex,1
+55,Pintura temple,1
+56,Plancha de Acero LAC,1
+57,Plancha de Acero LAF,1
+58,Plancha de acero mediano LAC,0
+59,Plancha de fibro-cemento,1
+60,Plancha de poliuretano,1
+61,Plancha galvanizada,1
+62,Poste de concreto,1
+63,Poste de fierro,1
+64,Terrazo,1
+65,Tubería de acero negro y/o galvanizado,1 
+66,Tubería de PVC para la red de Agua Potable y Alcantarillado,1
+67,Tubería de asbesto cemento de 18"a 24",0
+68,Tubería de cobre,1
+69,Tubería de concreto simple,1
+70,Tubería de concreto reforzado,1
+71,Tubería de fierro fundido,1
+72,Tubería de PVC para agua ,1
+73,Ducto telefónico de PVC,1
+74,Tubería de PVC para electricidad (SAP),0
+75,Tubería de PVC para electricidad (SEL),0
+76,Válvula de bronce importada,0
+77,Válvula de bronce nacional,1
+78,Válvula de fierro fundido nacional,1
+79,Vidrio incoloro nacional,1
+80,Concreto Premezclado,1
