@@ -6,6 +6,11 @@ https://m.inei.gob.pe/estadisticas/indice-tematico/price-indexes/
 El link para "Índices Unificados de Precios de la Construcción (Base Julio 1992 = 100)"
 no es estático, por lo que hay que descargarlo manualmente. Sin embargo, sirve para
 obtener la base de datos con la que empezar.
+
+Se actualiza mensualmente según lo publicado en la página del INEI:
+
+https://www.gob.pe/institucion/inei/informes-publicaciones/4025211-indice-unificados-de-precios-de-la-construccion-para-las-seis-areas-geograficas
+
 """
 
 import sqlite3
@@ -25,7 +30,7 @@ def insert_regiones(path: str, regiones: list[tuple]):
         sql = """
             INSERT INTO regiones("región", "área_geográfica")
             VALUES (?, ?)
-    """
+        """
         cursor.executemany(sql, regiones)
         conn.commit()
     except sqlite3.Error as e:
@@ -43,7 +48,7 @@ def insert_códigos(path: str, códigos: list[tuple]):
         sql = """
             INSERT INTO códigos("ID", "Nombre", "Activo")
             VALUES (?, ?, ?)
-    """
+        """
         cursor.executemany(sql, códigos)
         conn.commit()
     except sqlite3.Error as e:
@@ -148,14 +153,15 @@ def map_índices(mes: int, año: int, ws, start_col: int, end_col: int, start_ro
 
 
 def main():
-    # regiones = get_regiones(path='indices_unificados/áreas_geográficas.txt')
-    # insert_regiones(path='indices_unificados/indices_unificados.db', regiones=regiones)
+    # regiones = get_regiones(path='índices_unificados/áreas_geográficas.txt')
+    # insert_regiones(path='índices_unificados/indices_unificados.db', regiones=regiones)
 
-    # relación_índices = get_códigos('indices_unificados/códigos.txt')
-    # insert_códigos('indices_unificados/indices_unificados.db', relación_índices)
+    # relación_índices = get_códigos('índices_unificados/códigos.txt')
+    # insert_códigos('índices_unificados/indices_unificados.db', relación_índices)
 
-    índices = get_precios('indices_unificados/set24.xlsx')
-    insert_índices('indices_unificados/indices_unificados.db', índices)
+    # índices = get_precios('índices_unificados/set24.xlsx')
+    # insert_índices('índices_unificados/índices_unificados.db', índices)
+    pass
 
 
 main()
