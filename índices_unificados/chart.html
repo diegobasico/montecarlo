@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-c49054023ccb532cdd6298a66446e74e"}, "mark": {"type": "line"}, "encoding": {"tooltip": [{"field": "Per\u00edodo", "type": "temporal"}, {"field": "\u00cdndice", "type": "quantitative"}], "x": {"axis": {"format": "%Y-%m", "labelAngle": -90, "tickCount": "month"}, "field": "Per\u00edodo", "title": "Mes", "type": "temporal"}, "y": {"axis": {"tickCount": 10}, "field": "\u00cdndice", "scale": {"domain": [743.1800000000001, 995.3]}, "title": "\u00cdndice", "type": "quantitative"}}, "title": ["\u00cdndice Unificado 3 - \u00c1rea 1", "Acero de construcci\u00f3n corrugado"], "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-c49054023ccb532cdd6298a66446e74e": [{"\u00cdndice": 898.83, "C\u00f3digo": 3, "\u00c1rea": 1, "year": 2023, "month": 1, "Per\u00edodo": "2023-01-01T00:00:00"}, {"\u00cdndice": 918.29, "C\u00f3digo": 3, "\u00c1rea": 1, "year": 2023, "month": 2, "Per\u00edodo": "2023-02-01T00:00:00"}, {"\u00cdndice": 903.9, "C\u00f3digo": 3, "\u00c1rea": 1, "year": 2023, "month": 3, "Per\u00edodo": "2023-03-01T00:00:00"}, {"\u00cdndice": 896.8, "C\u00f3digo": 3, "\u00c1rea": 1, "year": 2023, "month": 4, "Per\u00edodo": "2023-04-01T00:00:00"}, {"\u00cdndice": 878.71, "C\u00f3digo": 3, "\u00c1rea": 1, "year": 2023, "month": 5, "Per\u00edodo": "2023-05-01T00:00:00"}, {"\u00cdndice": 842.28, "C\u00f3digo": 3, "\u00c1rea": 1, "year": 2023, "month": 6, "Per\u00edodo": "2023-06-01T00:00:00"}, {"\u00cdndice": 806.21, "C\u00f3digo": 3, "\u00c1rea": 1, "year": 2023, "month": 7, "Per\u00edodo": "2023-07-01T00:00:00"}, {"\u00cdndice": 826.74, "C\u00f3digo": 3, "\u00c1rea": 1, "year": 2023, "month": 8, "Per\u00edodo": "2023-08-01T00:00:00"}, {"\u00cdndice": 833.56, "C\u00f3digo": 3, "\u00c1rea": 1, "year": 2023, "month": 9, "Per\u00edodo": "2023-09-01T00:00:00"}, {"\u00cdndice": 856.0, "C\u00f3digo": 3, "\u00c1rea": 1, "year": 2023, "month": 10, "Per\u00edodo": "2023-10-01T00:00:00"}, {"\u00cdndice": 840.81, "C\u00f3digo": 3, "\u00c1rea": 1, "year": 2023, "month": 11, "Per\u00edodo": "2023-11-01T00:00:00"}, {"\u00cdndice": 834.99, "C\u00f3digo": 3, "\u00c1rea": 1, "year": 2023, "month": 12, "Per\u00edodo": "2023-12-01T00:00:00"}, {"\u00cdndice": 851.78, "C\u00f3digo": 3, "\u00c1rea": 1, "year": 2024, "month": 1, "Per\u00edodo": "2024-01-01T00:00:00"}, {"\u00cdndice": 932.27, "C\u00f3digo": 3, "\u00c1rea": 1, "year": 2024, "month": 2, "Per\u00edodo": "2024-02-01T00:00:00"}, {"\u00cdndice": 897.41, "C\u00f3digo": 3, "\u00c1rea": 1, "year": 2024, "month": 3, "Per\u00edodo": "2024-03-01T00:00:00"}, {"\u00cdndice": 893.11, "C\u00f3digo": 3, "\u00c1rea": 1, "year": 2024, "month": 4, "Per\u00edodo": "2024-04-01T00:00:00"}, {"\u00cdndice": 836.6, "C\u00f3digo": 3, "\u00c1rea": 1, "year": 2024, "month": 5, "Per\u00edodo": "2024-05-01T00:00:00"}, {"\u00cdndice": 832.68, "C\u00f3digo": 3, "\u00c1rea": 1, "year": 2024, "month": 6, "Per\u00edodo": "2024-06-01T00:00:00"}, {"\u00cdndice": 847.66, "C\u00f3digo": 3, "\u00c1rea": 1, "year": 2024, "month": 7, "Per\u00edodo": "2024-07-01T00:00:00"}, {"\u00cdndice": 860.69, "C\u00f3digo": 3, "\u00c1rea": 1, "year": 2024, "month": 8, "Per\u00edodo": "2024-08-01T00:00:00"}, {"\u00cdndice": 867.51, "C\u00f3digo": 3, "\u00c1rea": 1, "year": 2024, "month": 9, "Per\u00edodo": "2024-09-01T00:00:00"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

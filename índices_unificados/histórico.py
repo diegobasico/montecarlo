@@ -144,8 +144,12 @@ def map_índices(mes: int, año: int, ws, start_col: int, end_col: int, start_ro
         for j, cell in enumerate(row, start=start_col):
             if type(cell) == str and '*' in cell:
                 cell = None
-            line = cell, int(
-                ws.cell(i, start_col - 1).value), int(ws.cell(7, j).value), año, mes
+            elif type(cell) == str and ',' in cell:
+                cell = cell.replace(',','.')
+                cell = float(cell)
+            else:
+                cell = float(cell)
+            line = cell, int(ws.cell(i, start_col - 1).value), int(ws.cell(7, j).value), año, mes
             print(line)
             índices.append(line)
 
@@ -159,8 +163,8 @@ def main():
     # relación_índices = get_códigos('índices_unificados/códigos.txt')
     # insert_códigos('índices_unificados/indices_unificados.db', relación_índices)
 
-    # índices = get_precios('índices_unificados/set24.xlsx')
-    # insert_índices('índices_unificados/índices_unificados.db', índices)
+    índices = get_precios('índices_unificados/set24.xlsx')
+    insert_índices('índices_unificados/índices_unificados.db', índices)
     pass
 
 
