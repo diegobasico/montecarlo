@@ -66,7 +66,7 @@ def insert_índices(path: str, índices: list[tuple]):
         sql = """
             INSERT INTO índices_unificados("Índice", "Código", "Área", "Año", "Mes")
             VALUES (?, ?, ?, ?, ?)
-    """
+        """
         cursor.executemany(sql, índices)
         conn.commit()
     except sqlite3.Error as e:
@@ -145,11 +145,12 @@ def map_índices(mes: int, año: int, ws, start_col: int, end_col: int, start_ro
             if type(cell) == str and '*' in cell:
                 cell = None
             elif type(cell) == str and ',' in cell:
-                cell = cell.replace(',','.')
+                cell = cell.replace(',', '.')
                 cell = float(cell)
             else:
                 cell = float(cell)
-            line = cell, int(ws.cell(i, start_col - 1).value), int(ws.cell(7, j).value), año, mes
+            line = cell, int(
+                ws.cell(i, start_col - 1).value), int(ws.cell(7, j).value), año, mes
             print(line)
             índices.append(line)
 

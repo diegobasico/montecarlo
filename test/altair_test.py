@@ -30,9 +30,9 @@ def distribution_plot(df, step):
 
 
 def main():
-    left = -1
-    mode = 1
-    right = 2
+    left = 1104172.66
+    mode = 1120365.85
+    right = 1159748.99
     size = 100000
     step = 500
     df = binned_dataframe(left, mode, right, size)
